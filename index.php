@@ -14,7 +14,7 @@
 
     <table width="100%" border="1">
         <tr>
-          <a href="web1/index.php"><td width="25%" align="center">智能饲养</td></a>
+          <td width="25%" align="center"><a href="web1/index.php">智能饲养</a></td>
           <td width="25%">&nbsp;</td>
           <td width="25%">&nbsp;</td>
           <td width="25%">&nbsp;</td>
