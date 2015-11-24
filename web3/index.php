@@ -8,8 +8,8 @@
     <meta name="description" content="" />
     <meta name="generator" content="9466 Design Engine 2.0.3" />
     <title>首页</title>
-    <link rel="stylesheet" href="assets/index.css?1448364336" />
-    <script type="text/javascript" src="assets/index.js?1448364336"></script>
+    <link rel="stylesheet" href="assets/index.css?1448365780" />
+    <script type="text/javascript" src="assets/index.js?1448365780"></script>
     <!--[if IE 6]>
     <script> try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} </script>
     <![endif]-->
@@ -21,7 +21,7 @@
             <div class="w-col" style="width:25%;">
             <div id="w-area-aaae" data-type="area" class="p-167442 n-widget w-area">
               <div id="w-image-aaaf" data-type="image" class="n-widget w-image">
-                <img src="assets/97306da3e65992d7ef0d10925c9ba2b1.png" />
+                <img src="assets/0ef2b90f98f99b4ae7204ff168abd234.jpg" />
               </div>
             </div>
             </div>
