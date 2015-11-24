@@ -329,37 +329,41 @@ a:hover, a:active{
 	padding:10px;
 	margin:0px auto 0px auto
 }
-#w-image-aaaj{
-	font-size:12px;
-	line-height:24px;
+#w-area-aaaj{
+	margin:0px auto 0px auto;
+	padding:10px;
+	background-position:top;
+	height:220px
+}
+#w-image-aaak{
 	text-align:center
 }
-#w-titlebox-aaak{
+#w-titlebox-aaal{
 	margin-top:15px
 }
-#w-area-aaal{
+#w-area-aaam{
 	margin-right:auto;
 	margin-left:auto
 }
-#w-image-text-aaam{
+#w-image-text-aaan{
 	padding:10px
 }
-#w-image-aaan{
+#w-image-aaao{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
 }
-#w-text-aaao{
+#w-text-aaap{
 	line-height:1.8
 }
-#w-area-aaap{
+#w-area-aaaq{
 	padding-top:35px;
 	padding-bottom:35px;
 	background-image:url("743148bc94c2cc2af6d72cdf181a448d.jpg");
 	margin-top:50px
 }
-#w-text-aaaq{
+#w-text-aaar{
 	line-height:1.8
 }

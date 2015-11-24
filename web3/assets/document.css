@@ -329,79 +329,83 @@ a:hover, a:active{
 	padding:10px;
 	margin:0px auto 0px auto
 }
-#w-image-aaaj{
-	font-size:12px;
-	line-height:24px;
+#w-area-aaaj{
+	margin:0px auto 0px auto;
+	padding:10px;
+	background-position:top;
+	height:220px
+}
+#w-image-aaak{
 	text-align:center
 }
-#w-titlebox-aaak{
+#w-titlebox-aaal{
 	margin-top:15px
 }
-#w-area-aaal{
+#w-area-aaam{
 	margin-right:auto;
 	margin-left:auto;
 	padding:15px 10px 10px 10px
 }
-#w-columnbox-aaam{
+#w-columnbox-aaan{
 	margin:15px auto 15px auto
 }
-#w-area-aaan{
+#w-area-aaao{
 	margin-right:12.5px
 }
-#w-image-aaao{
+#w-image-aaap{
 	font-size:12px;
 	line-height:24px;
 	text-align:center
 }
-#w-area-aaap{
+#w-area-aaaq{
 	margin-left:12.5px;
 	margin-right:12.5px
 }
-#w-image-aaar{
+#w-image-aaas{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
 }
-#w-text-aaas{
+#w-text-aaat{
 	line-height:1.8
 }
-#w-image-text-aaat{
+#w-image-text-aaau{
 	margin-top:35px
 }
-#w-image-aaau{
+#w-image-aaav{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
 }
-#w-text-aaav{
+#w-text-aaaw{
 	line-height:1.8
 }
-#w-area-aaaw{
+#w-area-aaax{
 	margin-left:12.5px
 }
-#w-image-aaay{
+#w-image-aaaz{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
-}
-#w-text-aaaz{
-	line-height:1.8
 }
 #w-text-aaba{
 	line-height:1.8
 }
-#w-area-aabb{
+#w-text-aabb{
+	line-height:1.8
+}
+#w-area-aabc{
 	padding-top:35px;
 	padding-bottom:35px;
 	background-image:url("743148bc94c2cc2af6d72cdf181a448d.jpg");
 	margin-top:50px
 }
-#w-text-aabc{
+#w-text-aabd{
 	line-height:1.8
 }

@@ -329,67 +329,71 @@ a:hover, a:active{
 	padding:10px;
 	margin:0px auto 0px auto
 }
-#w-image-aaaj{
-	font-size:12px;
-	line-height:24px;
+#w-area-aaaj{
+	margin:0px auto 0px auto;
+	padding:10px;
+	background-position:top;
+	height:220px
+}
+#w-image-aaak{
 	text-align:center
 }
-#w-titlebox-aaak{
+#w-titlebox-aaal{
 	margin:10px auto 10px auto
 }
-#w-area-aaal{
+#w-area-aaam{
 	margin-right:auto;
 	margin-left:auto;
 	padding-top:15px
 }
-#w-image-text-aaam{
+#w-image-text-aaan{
 	margin-top:15px;
 	margin-bottom:15px
 }
-#w-image-aaan{
+#w-image-aaao{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
 }
-#w-text-aaao{
+#w-text-aaap{
 	line-height:1.8
 }
-#w-image-text-aaap{
+#w-image-text-aaaq{
 	margin-top:15px;
 	margin-bottom:15px
 }
-#w-image-aaaq{
+#w-image-aaar{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
 }
-#w-text-aaar{
+#w-text-aaas{
 	line-height:1.8
 }
-#w-image-text-aaas{
+#w-image-text-aaat{
 	margin-top:15px;
 	margin-bottom:15px
 }
-#w-image-aaat{
+#w-image-aaau{
 	font-size:12px;
 	line-height:24px;
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
 }
-#w-text-aaau{
+#w-text-aaav{
 	line-height:1.8
 }
-#w-area-aaav{
+#w-area-aaaw{
 	padding-top:35px;
 	padding-bottom:35px;
 	background-image:url("743148bc94c2cc2af6d72cdf181a448d.jpg");
 	margin-top:50px
 }
-#w-text-aaaw{
+#w-text-aaax{
 	line-height:1.8
 }

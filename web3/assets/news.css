@@ -327,48 +327,52 @@ a:hover, a:active{
 	padding:10px;
 	margin:0px auto 0px auto
 }
-#w-image-aaaj{
-	font-size:12px;
-	line-height:24px;
+#w-area-aaaj{
+	margin:0px auto 0px auto;
+	padding:10px;
+	background-position:top;
+	height:220px
+}
+#w-image-aaak{
 	text-align:center
 }
-#w-titlebox-aaak{
+#w-titlebox-aaal{
 	margin-top:15px
 }
-#w-area-aaal{
+#w-area-aaam{
 	margin-right:auto;
 	margin-left:auto;
 	padding:15px 10px 10px 10px
 }
-#w-text-aaam{
+#w-text-aaan{
 	line-height:1.8
 }
-#w-titlebox-aaan{
+#w-titlebox-aaao{
 	margin:0px auto 0px auto;
 	background-position:top
 }
-#w-area-aaao{
+#w-area-aaap{
 	background-position:top
 }
-#w-text-aaap{
+#w-text-aaaq{
 	line-height:1.8
 }
-#w-titlebox-aaaq{
+#w-titlebox-aaar{
 	margin:0px auto 0px auto;
 	background-position:top
 }
-#w-area-aaar{
+#w-area-aaas{
 	background-position:top
 }
-#w-text-aaas{
+#w-text-aaat{
 	line-height:1.8
 }
-#w-area-aaat{
+#w-area-aaau{
 	padding-top:35px;
 	padding-bottom:35px;
 	background-image:url("743148bc94c2cc2af6d72cdf181a448d.jpg");
 	margin-top:50px
 }
-#w-text-aaau{
+#w-text-aaav{
 	line-height:1.8
 }
