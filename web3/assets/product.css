@@ -353,10 +353,6 @@ a:hover, a:active{
 	margin-bottom:6px;
 	text-align:center
 }
-#w-image-aaan img{
-	padding:6px;
-	border:1px solid #d3d3d3
-}
 #w-text-aaao{
 	line-height:1.8
 }
@@ -370,10 +366,6 @@ a:hover, a:active{
 	margin-right:6px;
 	margin-bottom:6px;
 	text-align:center
-}
-#w-image-aaaq img{
-	padding:6px;
-	border:1px solid #d3d3d3
 }
 #w-text-aaar{
 	line-height:1.8
@@ -389,37 +381,15 @@ a:hover, a:active{
 	margin-bottom:6px;
 	text-align:center
 }
-#w-image-aaat img{
-	padding:6px;
-	border:1px solid #d3d3d3
-}
 #w-text-aaau{
 	line-height:1.8
 }
-#w-image-text-aaav{
-	margin-top:15px;
-	margin-bottom:15px
-}
-#w-image-aaaw{
-	font-size:12px;
-	line-height:24px;
-	margin-right:6px;
-	margin-bottom:6px;
-	text-align:center
-}
-#w-image-aaaw img{
-	padding:6px;
-	border:1px solid #d3d3d3
-}
-#w-text-aaax{
-	line-height:1.8
-}
-#w-area-aaay{
+#w-area-aaav{
 	padding-top:35px;
 	padding-bottom:35px;
 	background-image:url("743148bc94c2cc2af6d72cdf181a448d.jpg");
 	margin-top:50px
 }
-#w-text-aaaz{
+#w-text-aaaw{
 	line-height:1.8
 }
