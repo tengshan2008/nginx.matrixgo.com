@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>Javascript+PHP实现在线拍照功能</h1>
+
+<p>我们在一些WEB应用中可能会遇到这样的情况，用户需要自己现场拍照并上传到会员系统。比如驾校采集指纹拍照流程、考试现场采集照片等。我们今天要讲的是如何使用javascript和PHP实现一个简单的在线拍照并上传的功能。</p>
+<p>实现这个功能的前提是你的电脑设备上需要安装有摄像头设备，以及你的浏览器需要支持flash。</p>
+<div class="view_demo"><a target="_blank" href="http://www.helloweba.com/demo/jpegcam/"><img alt="查看演示DEMO" src="images/demo_btn.jpg" /></a> <a href="http://www.helloweba.com/demo/download/jpegcam.rar"><img alt="下载源码" src="images/download_btn.jpg" /></a></div>
+
+<h4>HTML</h4>
+<pre><code class="html">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Javascript+PHP实现在线拍照功能&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id="cam"&gt;
+  &lt;!--调用摄像组件并显示图像--&gt;
+  &lt;input type=button value="点击这里拍照" class="btn" onclick="take_snapshot()"&gt;
+&lt;/div&gt;
+&lt;div id="results"&gt;
+   &lt;!--显示上传结果--&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>在body中加入一个用于调用摄像组件的容器id#cam和一个显示上传信息的容器id#results。</p>
+<h4>Javascript</h4>
+<p>接下来调用摄像组件，我们先载入webcam.js，用于拍照和上传的js库。</p>
+<pre><code class="html">
+&lt;script type="text/javascript" src="webcam.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>然后在容器id#cam中，加入以下代码：</p>
+<pre><code class="js">
+&lt;script language="JavaScript"&gt;
+webcam.set_api_url( 'action.php' ); 
+webcam.set_quality( 90 ); // 图像质量(1 - 100)
+webcam.set_shutter_sound( true ); // 拍照时播放声音
+		
+document.write( webcam.get_html(320, 240, 160,120) );
+&lt;/script&gt;
+</code></pre>
+<p>我们调用了webcam，其中webcam.set_api_url用来设置图像上传交互的php路径，set_quality可设置图像质量，set_shutter_sound设置声音，get_html输出摄像组件，参数即宽度、高度、上传后宽度、上传后高度。</p>
+<p>当点击按钮拍照时，需要执行以下代码：</p>
+<pre><code class="js">
+&lt;script language="JavaScript"&gt;
+webcam.set_hook( 'onComplete', 'my_completion_handler' );
+		
+function take_snapshot() {
+	document.getElementById('results').innerHTML = '&lt;h4&gt;Uploading...&lt;/h4&gt;';
+	webcam.snap();
+}
+		
+function my_completion_handler(msg) {
+	if (msg.match(/(http\:\/\/\S+)/)) {
+		var image_url = RegExp.$1;
+		document.getElementById('results').innerHTML = 
+					'&lt;h4&gt;Upload Successful!&lt;/h4&gt;' + 
+					'&lt;img src="' + image_url + '"&gt;';
+		webcam.reset();
+	}
+	else alert("PHP Error: " + msg);
+}
+&lt;/script&gt;
+</code></pre>
+<p>当执行拍照动作时，代码与后台php交互，如果上传图片完成后，则返回相应的信息。</p>
+<h4>PHP</h4>
+<p>action.php所做的就是将本地拍照的图像上传到服务器，并将图片路径返回给前端。注意存放图片的路径要给写权限。</p>
+<pre><code class="php">
+$filename = date('YmdHis') . '.jpg';
+$result = file_put_contents( 'pics/'.$filename, file_get_contents('php://input') );
+if (!$result) {
+	print "ERROR: Failed to write data to $filename, check permissions\n";
+	exit();
+}
+
+$url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']) . '/pics/' . $filename;
+print "$url\n";
+</code></pre>
+<p>本文只是简单的介绍了下在线拍照和上传功能，其实深入应用场景如上传后再裁剪，生成多张不同比例的图像等等，大家自己去琢磨吧。</p>
+
+</body>
+</html>
